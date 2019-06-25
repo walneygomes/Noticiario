@@ -10,13 +10,13 @@ public class EmpregoTecnicoAdministracao implements NoticiaEmprego {
 		if (pessoa.getIdade() > IDADE_MAX) {
 			assinantes.add(pessoa);
 		} else {
-			System.err.print("´Pessoa maiores de:" + IDADE_MAX + "Permitida");
+			System.err.print("Â´Pessoa maiores de:" + IDADE_MAX + "Permitida");
 		}
 	}
 
 	@Override
 	public void notificaPessoa(String texto) {
-		if (texto == null) {
+		if (texto.equals("")) {
 			notificaPessoa("<Voce foi notificado porque embreve estaremos com oportunidades de vagas>");
 		} 
 		else {
